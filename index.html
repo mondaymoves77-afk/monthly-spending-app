@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>لوحة المصروفات الشهرية</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="bg"><i></i><i></i></div>
+<main class="app">
+
+<section class="card" id="loginCard">
+  <div class="brand">
+    <div class="logo">✦</div>
+    <div><small>SMART EXPENSE</small><h1>لوحة المصروفات</h1></div>
+  </div>
+
+  <div class="welcome">
+    أهلاً بك 👋
+    <p>أدخل اسمك وكلمة السر لعرض ملخص مصروفاتك الشهرية.</p>
+  </div>
+
+  <form id="form">
+    <label>الاسم</label>
+    <div class="input"><span>👤</span><input id="name" required placeholder="اكتب اسمك"></div>
+
+    <label>كلمة السر</label>
+    <div class="input"><span>🔐</span><input id="password" type="password" required placeholder="أدخل كلمة السر"></div>
+
+    <button id="loginBtn">دخول إلى حسابي <b>←</b></button>
+    <div id="error"></div>
+  </form>
+
+  <div class="features">
+    <span>🔒 آمن</span><span>📊 ملخص شهري</span><span>✨ تصميم حديث</span>
+  </div>
+</section>
+
+<section class="card hidden" id="resultCard">
+  <div class="top">
+    <div class="brand">
+      <div class="logo mini">✦</div>
+      <div><small>MONTHLY SUMMARY</small><h2>ملخص الشهر</h2></div>
+    </div>
+    <button class="logout" id="logout" type="button">خروج ←</button>
+  </div>
+
+  <div class="user">
+    <div class="avatar" id="avatar">خ</div>
+    <div><small>أهلاً بك</small><strong id="userName"></strong></div>
+  </div>
+
+  <div class="amountBox">
+    <span>إجمالي المصروف هذا الشهر</span>
+    <strong id="amount">0</strong>
+    <em>جنيه سوداني</em>
+    <p id="message"></p>
+  </div>
+
+  <div class="stats">
+    <div>📅 <small>الفترة</small><b>هذا الشهر</b></div>
+    <div>✓ <small>الحالة</small><b>تم التحقق</b></div>
+  </div>
+
+  <div class="quote">"تنظيم المصروف يساعدك على معرفة أين تذهب أموالك."</div>
+</section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
